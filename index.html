@@ -1,1017 +1,2120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b7778">
-<title>Maelis' Welcome Celebration — RSVP</title>
 
-<style>
-:root{
-  --teal:#0b7778;
-  --teald:#07585a;
-  --gold:#b77a1c;
-  --cream:#fffaf0;
-  --navy:#123f63;
-  --ink:#24373c;
-  --muted:#68787a;
-}
+  <meta charset="UTF-8">
 
-*{
-  box-sizing:border-box;
-}
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-body{
-  margin:0;
-  padding:24px 12px 40px;
-  font-family:Arial,sans-serif;
-  color:var(--ink);
-  background:linear-gradient(
-    135deg,
-    #e9f6f4,
-    #fffaf0 45%,
-    #f8efe0
-  );
-}
+  <meta
+    name="theme-color"
+    content="#0b7778"
+  >
 
-.wrap{
-  max-width:880px;
-  margin:auto;
-  background:#fff;
-  border:1px solid #e7d6b7;
-  border-radius:28px;
-  overflow:hidden;
-  box-shadow:0 20px 55px #09494a24;
-}
+  <title>
+    Maelis' Welcome Celebration — RSVP
+  </title>
 
-.hero{
-  padding:38px 24px 30px;
-  text-align:center;
-  color:#fff;
-  background:linear-gradient(
-    145deg,
-    #064f52,
-    #0b7778 58%,
-    #15999a
-  );
-}
 
-.eyebrow{
-  margin:0 0 8px;
-  color:#f6d68e;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:.25em;
-  text-transform:uppercase;
-}
+  <style>
 
-h1{
-  margin:0;
-  font:500 clamp(34px,6vw,56px)/1.05 Georgia,serif;
-}
+    :root {
 
-.sub{
-  margin:10px auto 20px;
-  max-width:620px;
-  font:italic 18px Georgia,serif;
-  color:#f8eed7;
-}
+      --teal: #0b7778;
+      --teal-dark: #07585a;
+      --teal-light: #2fa9a6;
 
-.photo{
-  max-width:780px;
-  margin:auto;
-  padding:5px;
-  border-radius:22px;
-  background:linear-gradient(
-    135deg,
-    #e2b965,
-    #fff1c7,
-    #b77a1c
-  );
-}
+      --gold: #b77a1c;
+      --gold-light: #e2b965;
 
-.photo img{
-  display:block;
-  width:100%;
-  aspect-ratio:3/2;
-  object-fit:cover;
-  border-radius:18px;
-}
+      --cream: #fffaf0;
 
-.details{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:1px;
-  background:#d9c299;
-}
+      --navy: #123f63;
 
-.detail{
-  padding:18px 12px;
-  text-align:center;
-  background:var(--cream);
-  font-size:13px;
-  line-height:1.45;
-}
+      --ink: #24373c;
 
-.detail b{
-  display:block;
-  color:var(--navy);
-  margin:5px 0;
-}
+      --muted: #68787a;
 
-.ico{
-  font-size:20px;
-}
+    }
 
-.walk{
-  display:block;
-  margin-top:6px;
-  padding-top:6px;
-  border-top:1px solid #ead8b8;
-  color:var(--teald);
-  font-size:12px;
-  font-weight:700;
-}
 
-.content{
-  padding:30px 34px 38px;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-h2{
-  margin:0 0 22px;
-  text-align:center;
-  color:var(--navy);
-  font:500 28px Georgia,serif;
-}
 
-form{
-  max-width:700px;
-  margin:auto;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.box{
-  margin-bottom:15px;
-  padding:20px;
-  border:1px solid #e7dfd1;
-  border-radius:18px;
-  background:#fffaf086;
-}
 
-.ttl{
-  margin-bottom:15px;
-  color:var(--navy);
-  font-weight:700;
-}
+    body {
 
-.ttl span{
-  display:inline-grid;
-  place-items:center;
-  width:27px;
-  height:27px;
-  margin-right:8px;
-  border-radius:50%;
-  color:#fff;
-  background:var(--teal);
-  font-size:13px;
-}
+      margin: 0;
 
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:13px;
-}
+      padding: 24px 12px 40px;
 
-label{
-  display:block;
-  margin:0 0 6px;
-  font-size:13px;
-  font-weight:700;
-}
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
-input,
-select,
-textarea{
-  width:100%;
-  padding:12px 13px;
-  border:1px solid #d7d7d0;
-  border-radius:11px;
-  background:#fff;
-  font:15px Arial,sans-serif;
-}
+      color: var(--ink);
 
-input:focus,
-select:focus,
-textarea:focus{
-  outline:3px solid #2fa9a622;
-  border-color:#2fa9a6;
-}
+      background:
 
-textarea{
-  min-height:84px;
-  resize:vertical;
-}
+        radial-gradient(
+          circle at 10% 10%,
+          rgba(226,185,101,.20),
+          transparent 28%
+        ),
 
-.choices{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
-}
+        radial-gradient(
+          circle at 90% 20%,
+          rgba(47,169,166,.17),
+          transparent 30%
+        ),
 
-.choice{
-  position:relative;
-}
+        linear-gradient(
+          135deg,
+          #e9f6f4,
+          #fffaf0 45%,
+          #f8efe0
+        );
 
-.choice input{
-  position:absolute;
-  opacity:0;
-}
+    }
 
-.choice label{
-  margin:0;
-  padding:14px;
-  text-align:center;
-  border:1px solid #d7d7d0;
-  border-radius:12px;
-  cursor:pointer;
-  background:#fff;
-}
 
-.choice input:checked + label{
-  color:#fff;
-  background:linear-gradient(
-    135deg,
-    var(--teald),
-    var(--teal)
-  );
-  border-color:var(--teal);
-}
+    .wrap {
 
-.guest{
-  margin-top:14px;
-  padding-top:14px;
-  border-top:1px dashed #d7c8ad;
-}
+      width: min(100%, 880px);
 
-.info{
-  margin:25px 0 20px;
-  padding-top:24px;
-  border-top:1px solid #e2cfaa;
-}
+      margin: auto;
 
-.info h3{
-  margin:0 0 6px;
-  text-align:center;
-  color:var(--navy);
-  font:500 24px Georgia,serif;
-}
+      overflow: hidden;
 
-.info > p{
-  margin:0 0 16px;
-  text-align:center;
-  color:var(--muted);
-  font-size:13px;
-}
+      background: white;
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:11px;
-}
+      border:
+        1px solid
+        #e7d6b7;
 
-.card{
-  padding:16px;
-  border:1px solid #e7dfd1;
-  border-radius:16px;
-  background:linear-gradient(
-    #fffdf7,
-    #f7efdf
-  );
-}
+      border-radius: 28px;
 
-.card h4{
-  margin:0 0 8px;
-  color:var(--navy);
-  font:600 16px Georgia,serif;
-}
+      box-shadow:
+        0 20px 55px
+        rgba(9,73,74,.16);
 
-.card p{
-  margin:0;
-  color:#52666a;
-  font-size:13px;
-  line-height:1.55;
-}
+    }
 
-.card a{
-  display:inline-block;
-  margin-top:9px;
-  color:var(--teald);
-  font-size:12px;
-  font-weight:700;
-  text-decoration:none;
-}
 
-.gift{
-  margin-top:18px;
-  padding:19px;
-  border:1px solid #ddbd82;
-  border-radius:17px;
-  background:#fffaf0;
-  line-height:1.6;
-  font-size:14px;
-}
+    /* =========================
+       HERO
+       ========================= */
 
-.gift strong{
-  display:block;
-  margin-bottom:5px;
-  color:var(--navy);
-  font:600 18px Georgia,serif;
-}
+    .hero {
 
-button{
-  width:100%;
-  padding:15px;
-  border:0;
-  border-radius:13px;
-  color:#fff;
-  background:linear-gradient(
-    135deg,
-    var(--teald),
-    var(--teal)
-  );
-  font-weight:800;
-  font-size:15px;
-  cursor:pointer;
-}
+      padding:
+        38px
+        24px
+        30px;
 
-button:disabled{
-  opacity:.55;
-}
+      text-align: center;
 
-.status{
-  display:none;
-  margin-top:14px;
-  padding:13px;
-  border-radius:12px;
-  font-size:14px;
-}
+      color: white;
 
-.ok{
-  display:block;
-  background:#e8f7f2;
-  color:#215c4f;
-  border:1px solid #b9dfd2;
-}
+      background:
 
-.err{
-  display:block;
-  background:#fff1ef;
-  color:#81372f;
-  border:1px solid #efc4bd;
-}
+        radial-gradient(
+          circle at 50% -30%,
+          rgba(255,255,255,.24),
+          transparent 42%
+        ),
 
-.privacy{
-  margin:16px 0 0;
-  text-align:center;
-  color:#7d8582;
-  font-size:11px;
-}
+        linear-gradient(
+          145deg,
+          #064f52,
+          #0b7778 58%,
+          #15999a
+        );
 
-footer{
-  padding:20px;
-  text-align:center;
-  color:var(--navy);
-  font:italic 16px Georgia,serif;
-  background:#faf1df;
-}
+    }
 
-.hp{
-  position:absolute;
-  left:-9999px;
-  opacity:0;
-}
 
-@media(max-width:720px){
+    .eyebrow {
 
-  body{
-    padding:10px;
-  }
+      margin:
+        0
+        0
+        8px;
 
-  .wrap{
-    border-radius:20px;
-  }
+      color:
+        #f6d68e;
 
-  .hero{
-    padding:30px 16px 24px;
-  }
+      font-size:
+        12px;
 
-  .content{
-    padding:25px 16px 30px;
-  }
+      font-weight:
+        700;
 
-  .details{
-    grid-template-columns:1fr 1fr;
-  }
+      letter-spacing:
+        .25em;
 
-  .grid,
-  .choices,
-  .cards{
-    grid-template-columns:1fr;
-  }
-}
-</style>
+      text-transform:
+        uppercase;
+
+    }
+
+
+    h1 {
+
+      margin: 0;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        clamp(
+          34px,
+          6vw,
+          56px
+        );
+
+      font-weight:
+        500;
+
+      line-height:
+        1.05;
+
+    }
+
+
+    .sub {
+
+      max-width:
+        620px;
+
+      margin:
+        10px
+        auto
+        20px;
+
+      color:
+        #f8eed7;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        18px;
+
+      font-style:
+        italic;
+
+    }
+
+
+    .photo {
+
+      width:
+        min(
+          100%,
+          780px
+        );
+
+      margin:
+        0 auto;
+
+      padding:
+        5px;
+
+      border-radius:
+        22px;
+
+      background:
+
+        linear-gradient(
+          135deg,
+          #e2b965,
+          #fff1c7,
+          #b77a1c
+        );
+
+      box-shadow:
+
+        0 18px 38px
+        rgba(0,0,0,.18);
+
+    }
+
+
+    .photo img {
+
+      display:
+        block;
+
+      width:
+        100%;
+
+      height:
+        auto;
+
+      aspect-ratio:
+        3 / 2;
+
+      object-fit:
+        cover;
+
+      object-position:
+        center;
+
+      border-radius:
+        18px;
+
+      image-rendering:
+        auto;
+
+    }
+
+
+    /* =========================
+       EVENT DETAILS
+       ========================= */
+
+    .details {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(
+          4,
+          1fr
+        );
+
+      gap:
+        1px;
+
+      background:
+        #d9c299;
+
+    }
+
+
+    .detail {
+
+      min-height:
+        120px;
+
+      padding:
+        18px 12px;
+
+      text-align:
+        center;
+
+      background:
+        var(--cream);
+
+      font-size:
+        13px;
+
+      line-height:
+        1.45;
+
+    }
+
+
+    .detail b {
+
+      display:
+        block;
+
+      margin:
+        5px 0;
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .ico {
+
+      font-size:
+        20px;
+
+    }
+
+
+    .walk {
+
+      display:
+        block;
+
+      margin-top:
+        6px;
+
+      padding-top:
+        6px;
+
+      border-top:
+        1px solid
+        #ead8b8;
+
+      color:
+        var(--teal-dark);
+
+      font-size:
+        12px;
+
+      font-weight:
+        700;
+
+    }
+
+
+    /* =========================
+       CONTENT
+       ========================= */
+
+    .content {
+
+      padding:
+        30px
+        34px
+        38px;
+
+    }
+
+
+    h2 {
+
+      margin:
+        0
+        0
+        22px;
+
+      text-align:
+        center;
+
+      color:
+        var(--navy);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        28px;
+
+      font-weight:
+        500;
+
+    }
+
+
+    form {
+
+      max-width:
+        700px;
+
+      margin:
+        auto;
+
+    }
+
+
+    .box {
+
+      margin-bottom:
+        15px;
+
+      padding:
+        20px;
+
+      border:
+        1px solid
+        #e7dfd1;
+
+      border-radius:
+        18px;
+
+      background:
+        rgba(
+          255,
+          250,
+          240,
+          .52
+        );
+
+    }
+
+
+    .ttl {
+
+      margin-bottom:
+        15px;
+
+      color:
+        var(--navy);
+
+      font-weight:
+        700;
+
+    }
+
+
+    .ttl span {
+
+      display:
+        inline-grid;
+
+      place-items:
+        center;
+
+      width:
+        27px;
+
+      height:
+        27px;
+
+      margin-right:
+        8px;
+
+      border-radius:
+        50%;
+
+      color:
+        white;
+
+      background:
+        var(--teal);
+
+      font-size:
+        13px;
+
+    }
+
+
+    .grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        13px;
+
+    }
+
+
+    label {
+
+      display:
+        block;
+
+      margin:
+        0
+        0
+        6px;
+
+      color:
+        #344a50;
+
+      font-size:
+        13px;
+
+      font-weight:
+        700;
+
+    }
+
+
+    input,
+    select,
+    textarea {
+
+      width:
+        100%;
+
+      padding:
+        12px 13px;
+
+      border:
+        1px solid
+        #d7d7d0;
+
+      border-radius:
+        11px;
+
+      background:
+        white;
+
+      color:
+        var(--ink);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size:
+        15px;
+
+      outline:
+        none;
+
+    }
+
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+
+      border-color:
+        var(--teal-light);
+
+      box-shadow:
+        0 0 0 4px
+        rgba(
+          47,
+          169,
+          166,
+          .12
+        );
+
+    }
+
+
+    textarea {
+
+      min-height:
+        84px;
+
+      resize:
+        vertical;
+
+    }
+
+
+    /* =========================
+       ATTENDANCE
+       ========================= */
+
+    .choices {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        10px;
+
+    }
+
+
+    .choice {
+
+      position:
+        relative;
+
+    }
+
+
+    .choice input {
+
+      position:
+        absolute;
+
+      opacity:
+        0;
+
+    }
+
+
+    .choice label {
+
+      margin:
+        0;
+
+      padding:
+        14px;
+
+      text-align:
+        center;
+
+      border:
+        1px solid
+        #d7d7d0;
+
+      border-radius:
+        12px;
+
+      cursor:
+        pointer;
+
+      background:
+        white;
+
+    }
+
+
+    .choice input:checked + label {
+
+      color:
+        white;
+
+      border-color:
+        var(--teal);
+
+      background:
+
+        linear-gradient(
+          135deg,
+          var(--teal-dark),
+          var(--teal)
+        );
+
+    }
+
+
+    .guest {
+
+      margin-top:
+        14px;
+
+      padding-top:
+        14px;
+
+      border-top:
+        1px dashed
+        #d7c8ad;
+
+    }
+
+
+    /* =========================
+       PARKING / HOTEL
+       ========================= */
+
+    .info {
+
+      margin:
+        25px
+        0
+        20px;
+
+      padding-top:
+        24px;
+
+      border-top:
+        1px solid
+        #e2cfaa;
+
+    }
+
+
+    .info h3 {
+
+      margin:
+        0
+        0
+        6px;
+
+      text-align:
+        center;
+
+      color:
+        var(--navy);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        24px;
+
+      font-weight:
+        500;
+
+    }
+
+
+    .info > p {
+
+      margin:
+        0
+        0
+        16px;
+
+      text-align:
+        center;
+
+      color:
+        var(--muted);
+
+      font-size:
+        13px;
+
+      line-height:
+        1.5;
+
+    }
+
+
+    .cards {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(
+          3,
+          1fr
+        );
+
+      gap:
+        11px;
+
+    }
+
+
+    .card {
+
+      padding:
+        16px;
+
+      border:
+        1px solid
+        #e7dfd1;
+
+      border-radius:
+        16px;
+
+      background:
+
+        linear-gradient(
+          #fffdf7,
+          #f7efdf
+        );
+
+    }
+
+
+    .card h4 {
+
+      margin:
+        0
+        0
+        8px;
+
+      color:
+        var(--navy);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        16px;
+
+      font-weight:
+        600;
+
+    }
+
+
+    .card p {
+
+      margin:
+        0;
+
+      color:
+        #52666a;
+
+      font-size:
+        13px;
+
+      line-height:
+        1.55;
+
+    }
+
+
+    .card a {
+
+      display:
+        inline-block;
+
+      margin-top:
+        9px;
+
+      color:
+        var(--teal-dark);
+
+      font-size:
+        12px;
+
+      font-weight:
+        700;
+
+      text-decoration:
+        none;
+
+    }
+
+
+    .card a:hover {
+
+      text-decoration:
+        underline;
+
+    }
+
+
+    /* =========================
+       GIFTS
+       ========================= */
+
+    .gift {
+
+      margin-top:
+        18px;
+
+      padding:
+        19px;
+
+      border:
+        1px solid
+        #ddbd82;
+
+      border-radius:
+        17px;
+
+      background:
+        #fffaf0;
+
+      color:
+        #4d5f63;
+
+      font-size:
+        14px;
+
+      line-height:
+        1.65;
+
+    }
+
+
+    .gift strong {
+
+      display:
+        block;
+
+      margin-bottom:
+        5px;
+
+      color:
+        var(--navy);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        18px;
+
+      font-weight:
+        600;
+
+    }
+
+
+    /* =========================
+       BUTTON
+       ========================= */
+
+    button {
+
+      width:
+        100%;
+
+      padding:
+        15px;
+
+      border:
+        0;
+
+      border-radius:
+        13px;
+
+      color:
+        white;
+
+      background:
+
+        linear-gradient(
+          135deg,
+          var(--teal-dark),
+          var(--teal)
+        );
+
+      box-shadow:
+        0 12px 28px
+        rgba(
+          11,
+          119,
+          120,
+          .20
+        );
+
+      font-weight:
+        800;
+
+      font-size:
+        15px;
+
+      cursor:
+        pointer;
+
+    }
+
+
+    button:disabled {
+
+      opacity:
+        .55;
+
+      cursor:
+        wait;
+
+    }
+
+
+    /* =========================
+       STATUS
+       ========================= */
+
+    .status {
+
+      display:
+        none;
+
+      margin-top:
+        14px;
+
+      padding:
+        13px;
+
+      border-radius:
+        12px;
+
+      font-size:
+        14px;
+
+      line-height:
+        1.5;
+
+    }
+
+
+    .ok {
+
+      display:
+        block;
+
+      background:
+        #e8f7f2;
+
+      color:
+        #215c4f;
+
+      border:
+        1px solid
+        #b9dfd2;
+
+    }
+
+
+    .err {
+
+      display:
+        block;
+
+      background:
+        #fff1ef;
+
+      color:
+        #81372f;
+
+      border:
+        1px solid
+        #efc4bd;
+
+    }
+
+
+    .privacy {
+
+      margin:
+        16px
+        0
+        0;
+
+      text-align:
+        center;
+
+      color:
+        #7d8582;
+
+      font-size:
+        11px;
+
+      line-height:
+        1.5;
+
+    }
+
+
+    footer {
+
+      padding:
+        20px;
+
+      text-align:
+        center;
+
+      color:
+        var(--navy);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        16px;
+
+      font-style:
+        italic;
+
+      background:
+        #faf1df;
+
+    }
+
+
+    .hp {
+
+      position:
+        absolute;
+
+      left:
+        -9999px;
+
+      opacity:
+        0;
+
+      pointer-events:
+        none;
+
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (
+      max-width:
+      720px
+    ) {
+
+      body {
+
+        padding:
+          10px;
+
+      }
+
+
+      .wrap {
+
+        border-radius:
+          20px;
+
+      }
+
+
+      .hero {
+
+        padding:
+          30px
+          16px
+          24px;
+
+      }
+
+
+      .content {
+
+        padding:
+          25px
+          16px
+          30px;
+
+      }
+
+
+      .details {
+
+        grid-template-columns:
+          1fr 1fr;
+
+      }
+
+
+      .grid,
+      .choices,
+      .cards {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
+
 <main class="wrap">
 
-<header class="hero">
 
-  <p class="eyebrow">
-    The Fahom Family Invites You
-  </p>
+  <!-- =========================
+       HERO
+       ========================= -->
 
-  <h1>
-    Maelis' Welcome Celebration
-  </h1>
+  <header class="hero">
 
-  <p class="sub">
-    Celebrating one year of love — and sharing this special moment together.
-  </p>
 
-  <div class="photo">
-    <img
-      id="heroImage"
-      alt="Maelis celebration"
+    <p class="eyebrow">
+      The Fahom Family Invites You
+    </p>
+
+
+    <h1>
+      Maelis' Welcome Celebration
+    </h1>
+
+
+    <p class="sub">
+      Celebrating one year of love — and sharing this special moment together.
+    </p>
+
+
+    <div class="photo">
+
+      <img
+        src="maelis_sharp.webp"
+        alt="The Fahom family celebrating Maelis"
+      >
+
+    </div>
+
+
+  </header>
+
+
+
+  <!-- =========================
+       EVENT DETAILS
+       ========================= -->
+
+  <section class="details">
+
+
+    <div class="detail">
+
+      <span class="ico">
+        📅
+      </span>
+
+      <b>
+        Saturday
+      </b>
+
+      10 October 2026
+
+    </div>
+
+
+
+    <div class="detail">
+
+      <span class="ico">
+        🕖
+      </span>
+
+      <b>
+        Arrival
+      </b>
+
+      7:00–8:00 PM
+
+    </div>
+
+
+
+    <div class="detail">
+
+      <span class="ico">
+        📍
+      </span>
+
+      <b>
+        Westspitze · Saal Eins
+      </b>
+
+      Eisenbahnstraße 1
+
+      <br>
+
+      72072 Tübingen
+
+
+      <span class="walk">
+
+        🚶 About 5 minutes on foot from Tübingen Hbf (main station)
+
+      </span>
+
+    </div>
+
+
+
+    <div class="detail">
+
+      <span class="ico">
+        ✦
+      </span>
+
+      <b>
+        Dress code
+      </b>
+
+      Casual
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       RSVP
+       ========================= -->
+
+  <div class="content">
+
+
+    <h2>
+      Please confirm your attendance
+    </h2>
+
+
+
+    <form
+      id="rsvpForm"
+      novalidate
     >
-  </div>
-
-</header>
 
 
-<section class="details">
-
-  <div class="detail">
-    <span class="ico">📅</span>
-    <b>Saturday</b>
-    10 October 2026
-  </div>
-
-  <div class="detail">
-    <span class="ico">🕖</span>
-    <b>Arrival</b>
-    7:00–8:00 PM
-  </div>
-
-  <div class="detail">
-    <span class="ico">📍</span>
-    <b>Westspitze · Saal Eins</b>
-    Eisenbahnstraße 1
-    <br>
-    72072 Tübingen
-
-    <span class="walk">
-      🚶 About 5 minutes on foot from Tübingen Hbf (main station)
-    </span>
-  </div>
-
-  <div class="detail">
-    <span class="ico">✦</span>
-    <b>Dress code</b>
-    Casual
-  </div>
-
-</section>
-
-
-<div class="content">
-
-<h2>
-  Please confirm your attendance
-</h2>
-
-
-<form id="rsvpForm" novalidate>
-
-<input
-  class="hp"
-  id="website"
-  tabindex="-1"
-  autocomplete="off"
->
-
-
-<div class="box">
-
-  <div class="ttl">
-    <span>1</span>
-    Your name
-  </div>
-
-  <div class="grid">
-
-    <div>
-
-      <label for="firstName">
-        First name *
-      </label>
+      <!-- anti-spam -->
 
       <input
-        id="firstName"
-        autocomplete="given-name"
-        maxlength="80"
-        required
+        class="hp"
+        id="website"
+        tabindex="-1"
+        autocomplete="off"
       >
 
-    </div>
 
-    <div>
 
-      <label for="lastName">
-        Last name *
-      </label>
+      <!-- NAME -->
 
-      <input
-        id="lastName"
-        autocomplete="family-name"
-        maxlength="80"
-        required
+      <div class="box">
+
+
+        <div class="ttl">
+
+          <span>
+            1
+          </span>
+
+          Your name
+
+        </div>
+
+
+        <div class="grid">
+
+
+          <div>
+
+            <label for="firstName">
+              First name *
+            </label>
+
+            <input
+              id="firstName"
+              type="text"
+              maxlength="80"
+              autocomplete="given-name"
+              required
+            >
+
+          </div>
+
+
+
+          <div>
+
+            <label for="lastName">
+              Last name *
+            </label>
+
+            <input
+              id="lastName"
+              type="text"
+              maxlength="80"
+              autocomplete="family-name"
+              required
+            >
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- ATTENDANCE -->
+
+      <div class="box">
+
+
+        <div class="ttl">
+
+          <span>
+            2
+          </span>
+
+          Will you attend?
+
+        </div>
+
+
+        <div class="choices">
+
+
+          <div class="choice">
+
+            <input
+              id="yes"
+              type="radio"
+              name="attendance"
+              value="yes"
+              checked
+            >
+
+            <label for="yes">
+
+              Yes, I / we will be there 🎉
+
+            </label>
+
+          </div>
+
+
+
+          <div class="choice">
+
+            <input
+              id="no"
+              type="radio"
+              name="attendance"
+              value="no"
+            >
+
+            <label for="no">
+
+              Sadly, I / we cannot attend
+
+            </label>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- PEOPLE -->
+
+      <div
+        class="box"
+        id="partyBox"
       >
 
-    </div>
 
-  </div>
+        <div class="ttl">
 
-</div>
+          <span>
+            3
+          </span>
+
+          Who is coming?
+
+        </div>
 
 
-<div class="box">
+        <label for="partySize">
 
-  <div class="ttl">
-    <span>2</span>
-    Will you attend?
-  </div>
+          Total number of attendees, including yourself *
 
-  <div class="choices">
+        </label>
 
-    <div class="choice">
 
-      <input
-        id="yes"
-        type="radio"
-        name="attendance"
-        value="yes"
-        checked
+        <select
+          id="partySize"
+          required
+        >
+
+          <option value="1">
+            1 person
+          </option>
+
+          <option value="2">
+            2 people
+          </option>
+
+        </select>
+
+
+        <div id="guestFields"></div>
+
+
+      </div>
+
+
+
+      <!-- MESSAGE -->
+
+      <div class="box">
+
+
+        <div class="ttl">
+
+          <span>
+            4
+          </span>
+
+          Optional note
+
+        </div>
+
+
+        <label for="message">
+
+          Message to the Fahom family
+
+        </label>
+
+
+        <textarea
+          id="message"
+          maxlength="500"
+          placeholder="Optional"
+        ></textarea>
+
+
+      </div>
+
+
+
+      <!-- =========================
+           PRACTICAL INFORMATION
+           ========================= -->
+
+      <section class="info">
+
+
+        <h3>
+          Parking & overnight stay
+        </h3>
+
+
+        <p>
+
+          For guests arriving by car or wishing to stay overnight,
+          these options are all close to the venue.
+
+        </p>
+
+
+
+        <div class="cards">
+
+
+
+          <!-- WESTSPITZE PARKING -->
+
+          <div class="card">
+
+
+            <h4>
+              Westspitze Underground Parking (U1)
+            </h4>
+
+
+            <p>
+
+              <strong>
+                Navigation address:
+              </strong>
+
+              <br>
+
+              Hanna-Bernheim-Straße 3
+
+              <br>
+
+              72072 Tübingen
+
+              <br><br>
+
+              The entrance is from Hanna-Bernheim-Straße and is marked
+              “Westspitze Privatparkplatz”.
+
+            </p>
+
+
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=Hanna-Bernheim-Stra%C3%9Fe%203%2C%2072072%20T%C3%BCbingen"
+            >
+
+              Open in Maps →
+
+            </a>
+
+
+          </div>
+
+
+
+          <!-- METROPOL -->
+
+          <div class="card">
+
+
+            <h4>
+              Parkhaus Metropol
+            </h4>
+
+
+            <p>
+
+              <strong>
+                Address:
+              </strong>
+
+              <br>
+
+              Reutlinger Straße 5
+
+              <br>
+
+              72072 Tübingen
+
+              <br><br>
+
+              A nearby 24/7 parking option within walking distance of Westspitze.
+
+            </p>
+
+
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=Parkhaus%20Metropol%2C%20Reutlinger%20Stra%C3%9Fe%205%2C%2072072%20T%C3%BCbingen"
+            >
+
+              Open in Maps →
+
+            </a>
+
+
+          </div>
+
+
+
+          <!-- IBIS -->
+
+          <div class="card">
+
+
+            <h4>
+              ibis Styles Tübingen
+            </h4>
+
+
+            <p>
+
+              <strong>
+                Address:
+              </strong>
+
+              <br>
+
+              Friedrichstraße 20
+
+              <br>
+
+              72072 Tübingen
+
+              <br><br>
+
+              A convenient nearby hotel for anyone who would prefer
+              to stay overnight before travelling home.
+
+            </p>
+
+
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=ibis%20Styles%20T%C3%BCbingen%2C%20Friedrichstra%C3%9Fe%2020%2C%2072072%20T%C3%BCbingen"
+            >
+
+              Open in Maps →
+
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- GIFTS -->
+
+        <div class="gift">
+
+
+          <strong>
+            ♡ A little note about gifts
+          </strong>
+
+
+          Your presence is the most important gift to us.
+
+          If you were already planning to bring something for Maelis,
+          we would kindly prefer a monetary gift rather than a physical present.
+
+          It can simply be given during the gift-giving moment at the celebration.
+
+          Please feel no obligation — sharing this special evening with you means
+          the most to our family.
+
+
+        </div>
+
+
+      </section>
+
+
+
+      <!-- SUBMIT -->
+
+      <button
+        id="submitBtn"
+        type="submit"
       >
 
-      <label for="yes">
-        Yes, I / we will be there 🎉
-      </label>
+        Confirm RSVP
 
-    </div>
+      </button>
 
 
-    <div class="choice">
 
-      <input
-        id="no"
-        type="radio"
-        name="attendance"
-        value="no"
-      >
+      <div
+        id="status"
+        class="status"
+        role="status"
+        aria-live="polite"
+      ></div>
 
-      <label for="no">
-        Sadly, I / we cannot attend
-      </label>
 
-    </div>
+    </form>
+
+
+
+    <p class="privacy">
+
+      The information entered here is used only to organize
+      Maelis' celebration and prepare the guest list.
+
+    </p>
+
 
   </div>
 
-</div>
 
 
-<div class="box" id="partyBox">
+  <footer>
 
-  <div class="ttl">
-    <span>3</span>
-    Who is coming?
-  </div>
+    Your presence will make this moment even more precious.
 
-  <label for="partySize">
-    Total number of attendees, including yourself *
-  </label>
-
-  <select id="partySize">
-
-    <option value="1">
-      1 person
-    </option>
-
-    <option value="2">
-      2 people
-    </option>
-
-  </select>
-
-  <div id="guestFields"></div>
-
-</div>
-
-
-<div class="box">
-
-  <div class="ttl">
-    <span>4</span>
-    Optional note
-  </div>
-
-  <label for="message">
-    Message to the Fahom family
-  </label>
-
-  <textarea
-    id="message"
-    maxlength="500"
-    placeholder="Optional"
-  ></textarea>
-
-</div>
-
-
-<section class="info">
-
-<h3>
-  Parking & overnight stay
-</h3>
-
-<p>
-  For guests arriving by car or wishing to stay overnight,
-  these options are all close to the venue.
-</p>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-  <h4>
-    Westspitze Underground Parking (U1)
-  </h4>
-
-  <p>
-    <strong>Navigation address:</strong>
-    <br>
-    Hanna-Bernheim-Straße 3
-    <br>
-    72072 Tübingen
-    <br><br>
-    The entrance is marked
-    “Westspitze Privatparkplatz”.
-  </p>
-
-  <a
-    target="_blank"
-    rel="noopener"
-    href="https://www.google.com/maps/search/?api=1&query=Hanna-Bernheim-Stra%C3%9Fe%203%2C%2072072%20T%C3%BCbingen"
-  >
-    Open in Maps →
-  </a>
-
-</div>
-
-
-<div class="card">
-
-  <h4>
-    Parkhaus Metropol
-  </h4>
-
-  <p>
-    <strong>Address:</strong>
-    <br>
-    Reutlinger Straße 5
-    <br>
-    72072 Tübingen
-    <br><br>
-    A nearby 24/7 parking option within walking distance of Westspitze.
-  </p>
-
-  <a
-    target="_blank"
-    rel="noopener"
-    href="https://www.google.com/maps/search/?api=1&query=Parkhaus%20Metropol%2C%20Reutlinger%20Stra%C3%9Fe%205%2C%2072072%20T%C3%BCbingen"
-  >
-    Open in Maps →
-  </a>
-
-</div>
-
-
-<div class="card">
-
-  <h4>
-    ibis Styles Tübingen
-  </h4>
-
-  <p>
-    <strong>Address:</strong>
-    <br>
-    Friedrichstraße 20
-    <br>
-    72072 Tübingen
-    <br><br>
-    A convenient nearby hotel for anyone who would prefer
-    to stay overnight before travelling home.
-  </p>
-
-  <a
-    target="_blank"
-    rel="noopener"
-    href="https://www.google.com/maps/search/?api=1&query=ibis%20Styles%20T%C3%BCbingen%2C%20Friedrichstra%C3%9Fe%2020%2C%2072072%20T%C3%BCbingen"
-  >
-    Open in Maps →
-  </a>
-
-</div>
-
-
-</div>
-
-
-<div class="gift">
-
-  <strong>
-    ♡ A little note about gifts
-  </strong>
-
-  Your presence is the most important gift to us.
-
-  If you were already planning to bring something for Maelis,
-  we would kindly prefer a monetary gift rather than a physical present.
-
-  It can simply be given during the gift-giving moment at the celebration.
-
-  Please feel no obligation — sharing this special evening with you means
-  the most to our family.
-
-</div>
-
-
-</section>
-
-
-<button
-  id="submitBtn"
-  type="submit"
->
-  Confirm RSVP
-</button>
-
-
-<div
-  id="status"
-  class="status"
-></div>
-
-
-</form>
-
-
-<p class="privacy">
-  The information entered here is used only to organize
-  Maelis' celebration and prepare the guest list.
-</p>
-
-
-</div>
-
-
-<footer>
-  Your presence will make this moment even more precious.
-</footer>
+  </footer>
 
 
 </main>
 
 
+
 <script>
 
-/* ==========================================================
-   N8N CONNECTION
-   ========================================================== */
+
+/* =========================================================
+   N8N
+   ========================================================= */
 
 const WEBHOOK =
   'https://agentfahom.app.n8n.cloud/webhook/maelis-rsvp';
+
 
 const EVENT_ID =
   'MAELIS-2026-10-10';
 
 
-/* ==========================================================
-   EMBEDDED MAELIS IMAGE
-   ========================================================== */
 
-const HERO_IMAGE_B64 = [
-
-'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'
-
-].join('');
-
-
-document.getElementById('heroImage').src =
-  'data:image/webp;base64,' + HERO_IMAGE_B64;
-
-
-/* ==========================================================
-   FORM LOGIC
-   ========================================================== */
+/* =========================================================
+   ELEMENTS
+   ========================================================= */
 
 const form =
-  document.getElementById('rsvpForm');
+  document.getElementById(
+    'rsvpForm'
+  );
+
 
 const party =
-  document.getElementById('partySize');
+  document.getElementById(
+    'partySize'
+  );
+
 
 const guest =
-  document.getElementById('guestFields');
+  document.getElementById(
+    'guestFields'
+  );
+
 
 const partyBox =
-  document.getElementById('partyBox');
-
-const status =
-  document.getElementById('status');
-
-const btn =
-  document.getElementById('submitBtn');
+  document.getElementById(
+    'partyBox'
+  );
 
 
-const attendance = () =>
-  document.querySelector(
-    'input[name="attendance"]:checked'
-  )?.value || 'yes';
+const statusBox =
+  document.getElementById(
+    'status'
+  );
 
 
-function render(){
+const button =
+  document.getElementById(
+    'submitBtn'
+  );
 
-  if(attendance() === 'no'){
+
+
+/* =========================================================
+   ATTENDANCE
+   ========================================================= */
+
+function getAttendance() {
+
+  return (
+
+    document.querySelector(
+      'input[name="attendance"]:checked'
+    )?.value
+
+    || 'yes'
+
+  );
+
+}
+
+
+
+/* =========================================================
+   ADDITIONAL GUEST
+   ========================================================= */
+
+function renderGuestFields() {
+
+
+  if (
+    getAttendance() ===
+    'no'
+  ) {
+
 
     partyBox.style.display =
       'none';
 
+
     guest.innerHTML =
       '';
 
+
     return;
+
   }
+
 
 
   partyBox.style.display =
     'block';
 
 
-  guest.innerHTML =
-    party.value === '2'
 
-    ? `
+  if (
+    party.value ===
+    '2'
+  ) {
+
+
+    guest.innerHTML = `
+
 
       <div class="guest">
 
+
         <div class="grid">
+
 
           <div>
 
+
             <label for="guestFirst">
+
               Attendee 2 — First name *
+
             </label>
+
 
             <input
               id="guestFirst"
+              type="text"
               maxlength="80"
               required
             >
 
+
           </div>
+
 
 
           <div>
 
+
             <label for="guestLast">
+
               Attendee 2 — Last name *
+
             </label>
+
 
             <input
               id="guestLast"
+              type="text"
               maxlength="80"
               required
             >
 
+
           </div>
+
 
         </div>
 
+
       </div>
 
-    `
 
-    : '';
+    `;
+
+
+  }
+
+  else {
+
+
+    guest.innerHTML =
+      '';
+
+
+  }
+
 }
 
+
+
+/* =========================================================
+   EVENT LISTENERS
+   ========================================================= */
 
 document
   .querySelectorAll(
     'input[name="attendance"]'
   )
   .forEach(
-    item =>
-      item.addEventListener(
+
+    radio => {
+
+      radio.addEventListener(
         'change',
-        render
-      )
+        renderGuestFields
+      );
+
+    }
+
   );
 
 
 party.addEventListener(
   'change',
-  render
+  renderGuestFields
 );
 
 
-render();
+renderGuestFields();
 
+
+
+/* =========================================================
+   FORM SUBMISSION
+   ========================================================= */
 
 form.addEventListener(
+
   'submit',
+
   async event => {
+
 
     event.preventDefault();
 
 
-    status.className =
+
+    statusBox.className =
       'status';
 
-    status.textContent =
+
+    statusBox.textContent =
       '';
 
 
-    if(!form.reportValidity()){
+
+    if (
+      !form.reportValidity()
+    ) {
+
       return;
+
     }
 
 
-    const att =
-      attendance();
+
+    const attendance =
+      getAttendance();
+
 
 
     const firstName =
       document
-        .getElementById('firstName')
+        .getElementById(
+          'firstName'
+        )
         .value
         .trim();
+
 
 
     const lastName =
       document
-        .getElementById('lastName')
+        .getElementById(
+          'lastName'
+        )
         .value
         .trim();
+
 
 
     const message =
       document
-        .getElementById('message')
+        .getElementById(
+          'message'
+        )
         .value
         .trim();
+
 
 
     const website =
       document
-        .getElementById('website')
+        .getElementById(
+          'website'
+        )
         .value
         .trim();
+
 
 
     let attendees =
@@ -1022,66 +2125,114 @@ form.addEventListener(
       0;
 
 
-    if(att === 'yes'){
+
+    /* ATTENDING */
+
+    if (
+      attendance ===
+      'yes'
+    ) {
+
 
       totalAttendees =
         Math.min(
+
           2,
+
           Number(
-            party.value || 1
+            party.value ||
+            1
           )
+
         );
+
 
 
       attendees.push({
 
-        firstName,
-        lastName,
-        primary:true
+        firstName:
+          firstName,
+
+        lastName:
+          lastName,
+
+        primary:
+          true
 
       });
 
 
-      if(totalAttendees === 2){
+
+      if (
+        totalAttendees ===
+        2
+      ) {
+
 
         attendees.push({
 
+
           firstName:
+
             document
-              .getElementById('guestFirst')
+              .getElementById(
+                'guestFirst'
+              )
               .value
               .trim(),
+
 
           lastName:
+
             document
-              .getElementById('guestLast')
+              .getElementById(
+                'guestLast'
+              )
               .value
               .trim(),
 
-          primary:false
+
+          primary:
+            false
+
 
         });
 
+
       }
+
 
     }
 
-    else{
+
+    /* NOT ATTENDING */
+
+    else {
+
 
       attendees = [
 
         {
 
-          firstName,
-          lastName,
-          primary:true
+          firstName:
+            firstName,
+
+          lastName:
+            lastName,
+
+          primary:
+            true
 
         }
 
       ];
 
+
     }
 
+
+
+    /* RESPONSE ID */
 
     const responseId =
 
@@ -1090,58 +2241,92 @@ form.addEventListener(
 
       ? crypto.randomUUID()
 
-      : `maelis-${Date.now()}`;
+      : `maelis-${Date.now()}-${Math.random()
+          .toString(16)
+          .slice(2)}`;
 
+
+
+    /* PAYLOAD */
 
     const payload = {
+
 
       eventId:
         EVENT_ID,
 
-      responseId,
+
+      responseId:
+        responseId,
+
 
       submittedAt:
-        new Date().toISOString(),
+        new Date()
+          .toISOString(),
+
 
       attendance:
-        att,
+        attendance,
 
-      totalAttendees,
 
-      primaryGuest:{
+      totalAttendees:
+        totalAttendees,
 
-        firstName,
-        lastName
+
+      primaryGuest: {
+
+        firstName:
+          firstName,
+
+        lastName:
+          lastName
 
       },
 
-      attendees,
 
-      message,
+      attendees:
+        attendees,
 
-      website
+
+      message:
+        message,
+
+
+      website:
+        website
+
 
     };
 
 
-    btn.disabled =
+
+    button.disabled =
       true;
 
 
-    btn.textContent =
+    button.textContent =
       'Saving your RSVP…';
 
 
-    try{
+
+    try {
+
 
       const body =
         new URLSearchParams();
 
 
+
       body.set(
+
         'payload',
-        JSON.stringify(payload)
+
+        JSON.stringify(
+          payload
+        )
+
       );
+
 
 
       const response =
@@ -1154,86 +2339,135 @@ form.addEventListener(
             method:
               'POST',
 
-            body
+            body:
+              body
 
           }
 
         );
 
 
-      if(!response.ok){
+
+      if (
+        !response.ok
+      ) {
+
 
         throw new Error(
-          response.status
+
+          `HTTP ${response.status}`
+
         );
+
 
       }
 
 
-      status.className =
+
+      statusBox.className =
         'status ok';
 
 
-      status.textContent =
 
-        att === 'yes'
+      if (
+        attendance ===
+        'yes'
+      ) {
 
-        ? `Thank you! Your RSVP has been registered for ${totalAttendees} ${
+
+        statusBox.textContent =
+
+          `Thank you! Your RSVP has been registered for ${totalAttendees} ${
             totalAttendees === 1
               ? 'person'
               : 'people'
-          }. We look forward to celebrating with you.`
+          }. We look forward to celebrating with you.`;
 
-        : 'Thank you for letting us know. Your response has been registered.';
 
+      }
+
+      else {
+
+
+        statusBox.textContent =
+
+          'Thank you for letting us know. Your response has been registered.';
+
+
+      }
+
+
+
+      /* RESET */
 
       form.reset();
 
 
+
       document
-        .getElementById('yes')
-        .checked = true;
+        .getElementById(
+          'yes'
+        )
+        .checked =
+          true;
+
 
 
       party.value =
         '1';
 
 
-      render();
+
+      renderGuestFields();
+
 
     }
 
-    catch(error){
+
+    catch (
+      error
+    ) {
+
 
       console.error(
         error
       );
 
 
-      status.className =
+      statusBox.className =
         'status err';
 
 
-      status.textContent =
+      statusBox.textContent =
+
         'We could not save your RSVP. Please try again, or contact the organizer directly.';
+
 
     }
 
-    finally{
 
-      btn.disabled =
+    finally {
+
+
+      button.disabled =
         false;
 
 
-      btn.textContent =
+      button.textContent =
         'Confirm RSVP';
+
 
     }
 
+
   }
+
 );
+
 
 </script>
 
+
 </body>
+
 </html>
